@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: Tong Shuyao
+### Student Id: 21136668
+### Email: stongaa@connect.ust.hk
 
 ---
 
