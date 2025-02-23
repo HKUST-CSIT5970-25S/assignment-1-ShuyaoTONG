@@ -16,7 +16,9 @@
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
     > The measurement tool I chose is the Phoronix Test Suite.
+    > 
     > To measure CPU performance, I configured PTS with the 7-Zip Compression Benchmark, and the default settings were used, which include multi-threaded compression and decompression workloads to stress the CPU. To measure memory performance, I configured PTS with the RAMspeed Benchmark, and used the "copy" test measures memory bandwidth for copying data, and the "integer" test measures memory bandwidth for integer operations.
+    > 
     > The CPU performance measurement results will include a compression rating and a decompression rating, both reported in MIPS, which represents the CPU's processing speed. The memory performance measurement results will include memory bandwidth for the "copy" and "integer" tests, reported in MB/s.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
