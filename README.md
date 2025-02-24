@@ -32,6 +32,8 @@
     | `c5d.large` |Compression Rating: Average: 7438 MIPS   Decompression Rating: Average: 4898 MIPS|Average: 13586.29 MB/s|
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
+
+    
     > The t2.medium has 2 vCPUs compared to the t2.micro's 1 vCPU, so the CPU performance of the t2.medium is significantly higher. This shows that increasing the number of vCPUs improves CPU performance.
     > The t2.medium has 4 GiB of memory compared to the t2.micro's 1 GiB, and the memory performance of the t2.medium is significantly higher. This shows that increasing memory resources improves memory performance.
 
