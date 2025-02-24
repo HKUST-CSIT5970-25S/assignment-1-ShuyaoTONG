@@ -27,11 +27,13 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro`  |Compression Rating: Average: 3608 MIPS   Decompression Rating: Average: 3081 MIPS|Average:  MB/s|
+    | `t2.micro`  |Compression Rating: Average: 3608 MIPS   Decompression Rating: Average: 3081 MIPS|Average: 10532.40 MB/s|
     | `t2.medium` |Compression Rating: Average: 9901 MIPS   Decompression Rating: Average: 5832 MIPS|Average: 19032.69 MB/s|
     | `c5d.large` |Compression Rating: Average: 7438 MIPS   Decompression Rating: Average: 4898 MIPS|Average: 13586.29 MB/s|
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
+    > The t2.medium has 2 vCPUs compared to the t2.micro's 1 vCPU, so the CPU performance of the t2.medium is significantly higher. This shows that increasing the number of vCPUs improves CPU performance.
+    > The t2.medium has 4 GiB of memory compared to the t2.micro's 1 GiB, and the memory performance of the t2.medium is significantly higher. This shows that increasing memory resources improves memory performance.
 
 ## Question 2: Measure the EC2 Network performance
 
