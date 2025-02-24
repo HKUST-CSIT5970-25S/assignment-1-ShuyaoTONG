@@ -27,8 +27,8 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
-    | `t2.medium`  |Compression Rating: Average: 10077 MIPS Decompression Rating: Average: 5863 MIPS|Average: 19383.35 MB/s|
+    | `t2.micro` ||                    |
+    | `t2.medium`  ||Average: 19383.35 MB/s|
     | `c5d.large` |                 |                    |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
@@ -39,12 +39,13 @@
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `t3.medium` - `t3.medium` |3.95 Gbits/sec  |0.281     |
+    | `m5.large` - `m5.large`   |     4.95 Gbits/sec           |     0.244      |
+    | `c5n.large` - `c5n.large` |     4.95 Gbits/sec           |    0.236 ms
+      |
+    | `t3.medium` - `c5n.large` | 2.12 Gbits/sec               |   0.823       |
+    | `m5.large` - `c5n.large`  | 2.76 Gbits/sec               |     0.680     |
+    | `m5.large` - `t3.medium`  |4.57 Gbits/sec                |    0.243      |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
