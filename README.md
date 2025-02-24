@@ -28,7 +28,7 @@
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
     | `t2.micro` ||                    |
-    | `t2.medium`  |||
+    | `t2.medium` |Compression Rating: Average: 9901 MIPS   Decompression Rating: Average: 5832 MIPS| Average: 19032.69 MB/s|
     | `c5d.large` |                 |                    |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
@@ -40,21 +40,20 @@
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
     | `t3.medium` - `t3.medium` |3.95 Gbits/sec  |0.281     |
-    | `m5.large` - `m5.large`   |     4.95 Gbits/sec           |     0.244      |
-    | `c5n.large` - `c5n.large` |     4.95 Gbits/sec           |    0.236 ms
-      |
-    | `t3.medium` - `c5n.large` | 2.12 Gbits/sec               |   0.823       |
-    | `m5.large` - `c5n.large`  | 2.76 Gbits/sec               |     0.680     |
-    | `m5.large` - `t3.medium`  |4.57 Gbits/sec                |    0.243      |
+    | `m5.large` - `m5.large`   |4.95 Gbits/sec  |0.244     |
+    | `c5n.large` - `c5n.large` |4.95 Gbits/sec  |0.236     |
+    | `t3.medium` - `c5n.large` |2.12 Gbits/sec  |0.823     |
+    | `m5.large` - `c5n.large`  |2.76 Gbits/sec  |0.680     |
+    | `m5.large` - `t3.medium`  |4.57 Gbits/sec  |0.243     |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
-2. (1 mark) What about the network performance for instances deployed in different regions? In order to answer this question, you need to complete the following table.
+3. (1 mark) What about the network performance for instances deployed in different regions? In order to answer this question, you need to complete the following table.
 
     | Connection                | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | N. Virginia - Oregon      |   33.2 Mbits/sec             |  64.7        |
-    | N. Virginia - N. Virginia |   9.36 Gbits/sec             |     0.107     |
-    | Oregon - Oregon           |     4.96 Gbits/sec           |     0.189     |
+    | N. Virginia - Oregon      |33.2 Mbits/sec  |64.7      |
+    | N. Virginia - N. Virginia |9.36 Gbits/sec  |0.107     |
+    | Oregon - Oregon           |4.96 Gbits/sec  |0.189     |
  
     > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.
